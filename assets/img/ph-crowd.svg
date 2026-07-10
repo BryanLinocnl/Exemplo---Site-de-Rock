@@ -1,0 +1,23 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 600" preserveAspectRatio="xMidYMid slice">
+  <defs>
+    <linearGradient id="g" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#1A0202"/>
+      <stop offset="1" stop-color="#2A0505"/>
+    </linearGradient>
+  </defs>
+  <rect width="800" height="600" fill="url(#g)"/>
+  <g fill="#050505">
+    <circle cx="80" cy="420" r="30"/><rect x="60" y="430" width="40" height="80"/>
+    <circle cx="200" cy="400" r="34"/><rect x="178" y="414" width="44" height="100"/>
+    <circle cx="320" cy="430" r="28"/><rect x="302" y="438" width="36" height="72"/>
+    <circle cx="440" cy="405" r="32"/><rect x="420" y="418" width="40" height="92"/>
+    <circle cx="560" cy="425" r="30"/><rect x="540" y="436" width="40" height="80"/>
+    <circle cx="680" cy="410" r="34"/><rect x="658" y="424" width="44" height="100"/>
+  </g>
+  <g opacity="0.4">
+    <circle cx="160" cy="300" r="2" fill="#E10600"/>
+    <circle cx="380" cy="280" r="2" fill="#00E676"/>
+    <circle cx="600" cy="310" r="2" fill="#FFB800"/>
+  </g>
+  <text x="400" y="560" font-family="'Bebas Neue',Impact,sans-serif" font-size="22" fill="#F5F5F5" opacity="0.35" text-anchor="middle" letter-spacing="4">PLATEIA</text>
+</svg>

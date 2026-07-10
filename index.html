@@ -1,0 +1,563 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Arquétipo Eventos — A Tribo Vai Se Reunir</title>
+    <meta name="description" content="Arquétipo Eventos: produção de shows, festivais e experiências imersivas. O underground encontra o monumental. 04 a 07 de Setembro de 2026.">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Montserrat:wght@300;400;600;700;800&family=Space+Mono:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+    <!-- ===== HEADER ===== -->
+    <header class="header" id="header">
+        <div class="container header-inner">
+            <a href="index.html" class="logo">
+                <span class="logo-icon"><i class="fas fa-bolt"></i></span>
+                <span class="logo-text">Arquétipo</span>
+            </a>
+
+            <nav class="main-nav" id="mainNav">
+                <ul>
+                    <li><a href="index.html" class="active">Home</a></li>
+                    <li><a href="lineup.html">Line-up</a></li>
+                    <li><a href="ingressos.html">Ingressos</a></li>
+                    <li><a href="ingressos.html#informacoes">Info</a></li>
+                    <li><a href="noticias.html">Notícias</a></li>
+                    <li><a href="ingressos.html#experiencias">Experiências</a></li>
+                </ul>
+            </nav>
+
+            <div class="header-actions">
+                <button class="search-btn" aria-label="Buscar"><i class="fas fa-search"></i></button>
+                <a href="ingressos.html" class="btn btn-small btn-outline">Ingressos</a>
+                <button class="menu-toggle" id="menuToggle" aria-label="Menu">
+                    <span></span><span></span><span></span>
+                </button>
+            </div>
+        </div>
+    </header>
+
+    <!-- ===== HERO ===== -->
+    <section class="hero">
+        <div class="hero-slide active" style="background-image: url('assets/img/real-crowd.jpg');">
+            <div class="container hero-content">
+                <div class="hero-date">04 — 07 SET 2026 / RIO DE JANEIRO</div>
+                <div class="hero-stage">Palco Principal</div>
+                <div class="hero-badge">Line-up ilustrativo</div>
+                <h1 class="hero-title glitch">Foo Fighters<br><span class="hero-highlight">Rise Against</span></h1>
+                <div class="hero-stage">Palco Sunset</div>
+                <h2 class="hero-subtitle">Capital Inicial <span class="hero-convida">convida</span><br>Dado Villa-Lobos & Hot Milk</h2>
+                <p class="hero-more">// A tribo vai se reunir</p>
+                <p class="hero-disclaimer">// Artistas ilustrativos, sujeitos a confirmação contratual</p>
+                <a href="lineup.html" class="btn btn-outline-light btn-large">Ver Line-up Completo</a>
+            </div>
+        </div>
+
+        <div class="hero-slide" style="background-image: url('assets/img/real-stage.jpg');">
+            <div class="container hero-content">
+                <div class="hero-date">07 SET 2026 / RIO DE JANEIRO</div>
+                <div class="hero-stage">New Dance Order</div>
+                <div class="hero-badge">Experiência imersiva</div>
+                <h1 class="hero-title glitch">Fatboy Slim<br><span class="hero-highlight">Live Set</span></h1>
+                <p class="hero-more">// Música, luz e movimento</p>
+                <a href="noticia.html" class="btn btn-outline-light btn-large">Saiba Mais</a>
+            </div>
+        </div>
+
+        <button class="hero-nav hero-prev" aria-label="Anterior"><i class="fas fa-chevron-left"></i></button>
+        <button class="hero-nav hero-next" aria-label="Próximo"><i class="fas fa-chevron-right"></i></button>
+
+        <div class="hero-dots">
+            <span class="active"></span>
+            <span></span>
+        </div>
+
+        <button class="hero-scroll-hint" id="scrollHint" aria-label="Rolar para o conteúdo">
+            <span>Scroll</span>
+            <i class="fas fa-chevron-down"></i>
+        </button>
+    </section>
+
+    <!-- ===== MARQUEE TICKER ===== -->
+    <div class="marquee">
+        <div class="marquee-content">
+            <span>FOO FIGHTERS <span class="marquee-dot">●</span> CAPITAL INICIAL <span class="marquee-dot">●</span> FATBOY SLIM <span class="marquee-dot">●</span> BEYONCÉ <span class="marquee-dot">●</span> BRUNO MARS <span class="marquee-dot">●</span> RISE AGAINST <span class="marquee-dot">●</span> IVETE SANGALO <span class="marquee-dot">●</span> MARTIN GARRIX <span class="marquee-dot">●</span> HOT MILK <span class="marquee-dot">●</span></span>
+            <span>FOO FIGHTERS <span class="marquee-dot">●</span> CAPITAL INICIAL <span class="marquee-dot">●</span> FATBOY SLIM <span class="marquee-dot">●</span> BEYONCÉ <span class="marquee-dot">●</span> BRUNO MARS <span class="marquee-dot">●</span> RISE AGAINST <span class="marquee-dot">●</span> IVETE SANGALO <span class="marquee-dot">●</span> MARTIN GARRIX <span class="marquee-dot">●</span> HOT MILK <span class="marquee-dot">●</span></span>
+        </div>
+    </div>
+
+    <!-- ===== STATS ===== -->
+    <section class="stats-section">
+        <div class="container">
+            <div class="stats-grid">
+                <div class="stat-item">
+                    <div class="stat-number" data-target="4" data-suffix="">0</div>
+                    <div class="stat-label">Dias de Festival</div>
+                </div>
+                <div class="stat-item">
+                    <div class="stat-number" data-target="3" data-suffix="">0</div>
+                    <div class="stat-label">Palcos</div>
+                </div>
+                <div class="stat-item">
+                    <div class="stat-number" data-target="40" data-suffix="+">0</div>
+                    <div class="stat-label">Atrações</div>
+                </div>
+                <div class="stat-item">
+                    <div class="stat-number" data-target="100" data-suffix="K+">0</div>
+                    <div class="stat-label">Pessoas/Dia</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ===== NEWS ===== -->
+    <section class="news-section" id="novidades">
+        <div class="container">
+            <div class="section-header">
+                <div>
+                    <div class="eyebrow">// Novidades</div>
+                    <h2 class="section-title">O Que Vem Por Aí</h2>
+                </div>
+                <a href="noticias.html" class="btn btn-ghost">Ver Todas <i class="fas fa-arrow-right" style="font-size:0.7rem"></i></a>
+            </div>
+
+            <div class="news-grid">
+                <article class="news-card">
+                    <a href="noticia.html">
+                        <div class="news-image" style="background-image: url('assets/img/real-concert.jpg');"></div>
+                        <div class="news-overlay">
+                            <span class="news-tag">Experiência</span>
+                            <h3>New Dance Order com novo visual</h3>
+                        </div>
+                    </a>
+                </article>
+
+                <article class="news-card">
+                    <a href="noticias.html">
+                        <div class="news-image" style="background-image: url('assets/img/real-stage.jpg');"></div>
+                        <div class="news-overlay">
+                            <span class="news-tag green">Inédito</span>
+                            <h3>ECCO by Lightwire: espetáculo inédito</h3>
+                        </div>
+                    </a>
+                </article>
+
+                <article class="news-card">
+                    <a href="ingressos.html#experiencias">
+                        <div class="news-image" style="background-image: url('assets/img/real-stage.jpg');"></div>
+                        <div class="news-overlay">
+                            <span class="news-tag gold">Premium</span>
+                            <h3>Comfort Zone: ingresso premium</h3>
+                        </div>
+                    </a>
+                </article>
+
+                <article class="news-card">
+                    <a href="noticias.html">
+                        <div class="news-image" style="background-image: url('assets/img/real-dj.jpg');"></div>
+                        <div class="news-overlay">
+                            <span class="news-tag">Mapa</span>
+                            <h3>Novidades e mapa da Cidade do Rock</h3>
+                        </div>
+                    </a>
+                </article>
+            </div>
+        </div>
+    </section>
+
+    <!-- ===== ABOUT / TIMELINE ===== -->
+    <section class="about-section">
+        <div class="container">
+            <div class="about-grid">
+                <div class="about-text">
+                    <div class="eyebrow">// A Produtora</div>
+                    <h2 class="section-title">Arquétipo<br>Eventos</h2>
+                    <p>O nome <strong>Arquétipo</strong> vem do grego <em>archetypon</em> — o modelo original, aquilo que serve de molde. É exatamente isso que buscamos: criar o arquétipo do festival brasileiro moderno.</p>
+                    <p>Combinamos <strong>grandes atrações musicais</strong> com ambientes temáticos, tecnologia de palco, gastronomia, arte e bem-estar. Mais do que um show, entregamos uma experiência que fica no DNA de quem vive.</p>
+                    <p>Da energia do underground ao monumental. <strong>Por um mundo melhor através da música.</strong></p>
+                </div>
+
+                <div class="timeline">
+                    <div class="timeline-item">
+                        <div class="timeline-year">2019</div>
+                        <div class="timeline-text">Primeira edição underground em warehouse na zona norte do Rio. 2 mil pessoas, 8 bandas, 1 noite.</div>
+                    </div>
+                    <div class="timeline-item">
+                        <div class="timeline-year">2022</div>
+                        <div class="timeline-text">Expansão para arena aberta. 15 mil pessoas/dia, 3 palcos e primeiros headliners internacionais.</div>
+                    </div>
+                    <div class="timeline-item">
+                        <div class="timeline-year">2024</div>
+                        <div class="timeline-text">Criação da Cidade do Rock Arquétipo. 70 mil pessoas/dia, parcerias com grandes marcas.</div>
+                    </div>
+                    <div class="timeline-item">
+                        <div class="timeline-year">2026</div>
+                        <div class="timeline-text">A maior edição da história: 4 dias, 3 palcos, 40+ atrações. A tribo inteira reunida.</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ===== MARQUEE GREEN ===== -->
+    <div class="marquee marquee-green">
+        <div class="marquee-content">
+            <span>04 SET <span class="marquee-dot">●</span> 05 SET <span class="marquee-dot">●</span> 06 SET <span class="marquee-dot">●</span> 07 SET <span class="marquee-dot">●</span> RIO DE JANEIRO <span class="marquee-dot">●</span> 04 SET <span class="marquee-dot">●</span> 05 SET <span class="marquee-dot">●</span> 06 SET <span class="marquee-dot">●</span> 07 SET <span class="marquee-dot">●</span> RIO DE JANEIRO <span class="marquee-dot">●</span></span>
+            <span>04 SET <span class="marquee-dot">●</span> 05 SET <span class="marquee-dot">●</span> 06 SET <span class="marquee-dot">●</span> 07 SET <span class="marquee-dot">●</span> RIO DE JANEIRO <span class="marquee-dot">●</span> 04 SET <span class="marquee-dot">●</span> 05 SET <span class="marquee-dot">●</span> 06 SET <span class="marquee-dot">●</span> 07 SET <span class="marquee-dot">●</span> RIO DE JANEIRO <span class="marquee-dot">●</span></span>
+        </div>
+    </div>
+
+    <!-- ===== QUOTE ===== -->
+    <section class="quote-section">
+        <div class="container">
+            <div class="quote-icon"><i class="fas fa-quote-left"></i></div>
+            <blockquote>
+                <p>"A música é o arquétipo da conexão humana. Quando a tribo se reúne e o som explode, por um instante o mundo faz sentido."</p>
+            </blockquote>
+            <div class="quote-author">— Manifesto Arquétipo</div>
+            <div class="quote-role">Fundadores, 2026</div>
+        </div>
+    </section>
+
+    <!-- ===== GALLERY ===== -->
+    <section class="gallery-section">
+        <div class="container">
+            <div class="text-center" style="margin-bottom: 50px;">
+                <div class="eyebrow">// Memórias</div>
+                <h2 class="section-title centered">Edições Anteriores</h2>
+            </div>
+
+            <div class="gallery-grid">
+                <div class="gallery-item wide">
+                    <img src="assets/img/real-concert.jpg" alt="Show 2024" loading="lazy">
+                    <div class="gallery-overlay"><i class="fas fa-expand"></i></div>
+                </div>
+                <div class="gallery-item">
+                    <img src="assets/img/real-stage.jpg" alt="Banda 2024" loading="lazy">
+                    <div class="gallery-overlay"><i class="fas fa-expand"></i></div>
+                </div>
+                <div class="gallery-item">
+                    <img src="assets/img/real-crowd.jpg" alt="Plateia 2024" loading="lazy">
+                    <div class="gallery-overlay"><i class="fas fa-expand"></i></div>
+                </div>
+                <div class="gallery-item tall">
+                    <img src="assets/img/real-dj.jpg" alt="DJ 2024" loading="lazy">
+                    <div class="gallery-overlay"><i class="fas fa-expand"></i></div>
+                </div>
+                <div class="gallery-item">
+                    <img src="assets/img/real-crowd.jpg" alt="Multidão 2024" loading="lazy">
+                    <div class="gallery-overlay"><i class="fas fa-expand"></i></div>
+                </div>
+                <div class="gallery-item">
+                    <img src="assets/img/real-lights.jpg" alt="Luzes 2024" loading="lazy">
+                    <div class="gallery-overlay"><i class="fas fa-expand"></i></div>
+                </div>
+                <div class="gallery-item wide">
+                    <img src="assets/img/real-stage.jpg" alt="Palco 2024" loading="lazy">
+                    <div class="gallery-overlay"><i class="fas fa-expand"></i></div>
+                </div>
+                <div class="gallery-item">
+                    <img src="assets/img/real-dj.jpg" alt="Eletrônica 2024" loading="lazy">
+                    <div class="gallery-overlay"><i class="fas fa-expand"></i></div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ===== TESTIMONIALS ===== -->
+    <section class="testimonials-section">
+        <div class="container">
+            <div class="text-center" style="margin-bottom: 50px;">
+                <div class="eyebrow">// A Tribo Fala</div>
+                <h2 class="section-title centered">Quem Já Viveu</h2>
+            </div>
+
+            <div class="testimonials-grid">
+                <div class="testimonial-card">
+                    <div class="testimonial-stars">★★★★★</div>
+                    <p class="testimonial-text">"A edição de 2024 mudou minha vida. O som, a energia da multidão, a estrutura… foi como se o mundo parasse por 4 dias. Mal posso esperar por 2026."</p>
+                    <div class="testimonial-author">
+                        <div class="testimonial-avatar">M</div>
+                        <div>
+                            <div class="testimonial-name">Marina Costa</div>
+                            <div class="testimonial-role">Pista Premium / 3 edições</div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="testimonial-card">
+                    <div class="testimonial-stars">★★★★★</div>
+                    <p class="testimonial-text">"Já fui a festivais no mundo todo e nenhum se compara com a energia do Arquétipo. O line-up é curado com tanto cuidado que cada dia é uma viagem."</p>
+                    <div class="testimonial-author">
+                        <div class="testimonial-avatar">R</div>
+                        <div>
+                            <div class="testimonial-name">Rafael Lima</div>
+                            <div class="testimonial-role">Comfort Zone / 4 edições</div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="testimonial-card">
+                    <div class="testimonial-stars">★★★★★</div>
+                    <p class="testimonial-text">"O New Dance Order é um outro mundo. Fiquei até o sol nascer. A cenografia de LED é absurda, parece que você tá dentro da música."</p>
+                    <div class="testimonial-author">
+                        <div class="testimonial-avatar">J</div>
+                        <div>
+                            <div class="testimonial-name">Júlia Mendes</div>
+                            <div class="testimonial-role">Pista / 2 edições</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ===== FAQ ===== -->
+    <section class="faq-section">
+        <div class="container narrow">
+            <div class="text-center" style="margin-bottom: 50px;">
+                <div class="eyebrow">// Dúvidas Frequentes</div>
+                <h2 class="section-title centered">Perguntas</h2>
+            </div>
+
+            <div class="faq-list">
+                <div class="faq-item">
+                    <div class="faq-question">
+                        <span>Quando e onde acontece o Arquétipo 2026?</span>
+                        <i class="fas fa-plus faq-icon"></i>
+                    </div>
+                    <div class="faq-answer"><p>O festival acontece de 04 a 07 de Setembro de 2026, na Cidade do Rock Arquétipo, localizada na zona portuária do Rio de Janeiro.</p></div>
+                </div>
+                <div class="faq-item">
+                    <div class="faq-question">
+                        <span>Como funciona a meia-entrada?</span>
+                        <i class="fas fa-plus faq-icon"></i>
+                    </div>
+                    <div class="faq-answer"><p>Estudantes, idosos, PCDs e jovens de 15 a 29 anos (Lei do Estudante) têm direito à meia-entrada mediante comprovação no portão. Os ingressos de meia-entrada são limitados.</p></div>
+                </div>
+                <div class="faq-item">
+                    <div class="faq-question">
+                        <span>Posso transferir meu ingresso?</span>
+                        <i class="fas fa-plus faq-icon"></i>
+                    </div>
+                    <div class="faq-answer"><p>Sim. A nomeação/transferência do ingresso está disponível até 48h antes do evento diretamente pela plataforma oficial de vendas. Após esse prazo, a transferência não é mais possível.</p></div>
+                </div>
+                <div class="faq-item">
+                    <div class="faq-question">
+                        <span>Crianças podem entrar no festival?</span>
+                        <i class="fas fa-plus faq-icon"></i>
+                    </div>
+                    <div class="faq-answer"><p>Crianças até 10 anos não pagam ingresso, desde que acompanhadas por um responsável maior de idade. Menores de 16 anos só podem entrar com autorização dos pais e acompanhados de responsável.</p></div>
+                </div>
+                <div class="faq-item">
+                    <div class="faq-question">
+                        <span>Posso entrar e sair do festival?</span>
+                        <i class="fas fa-plus faq-icon"></i>
+                    </div>
+                    <div class="faq-answer"><p>A reentrada é permitida uma vez por dia, mediante apresentação do ingresso e pulseira de identificação. Recomendamos chegar cedo para evitar filas.</p></div>
+                </div>
+                <div class="faq-item">
+                    <div class="faq-question">
+                        <span>Como funciona o Comfort Zone?</span>
+                        <i class="fas fa-plus faq-icon"></i>
+                    </div>
+                    <div class="faq-answer"><p>O Comfort Zone é o setor premium com assentos, vista privilegiada, open bar selecionado, lounge climatizado, banheiros exclusivos e estacionamento VIP. O acesso é limitado e garantido apenas com ingresso específico.</p></div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ===== SPONSORS ===== -->
+    <section class="sponsors-section">
+        <div class="container">
+            <div class="sponsor-tier">
+                <h4>Patrocinador Master</h4>
+                <div class="sponsor-logos master">
+                    <span class="sponsor-logo soon">Em breve</span>
+                </div>
+            </div>
+
+            <div class="sponsor-tier">
+                <h4>Parceiros Institucionais</h4>
+                <div class="sponsor-logos institutional">
+                    <span class="sponsor-logo soon">Em breve</span>
+                    <span class="sponsor-logo soon">Em breve</span>
+                    <span class="sponsor-logo soon">Em breve</span>
+                    <span class="sponsor-logo soon">Em breve</span>
+                </div>
+            </div>
+
+            <div class="sponsor-tier">
+                <h4>Patrocinadores</h4>
+                <div class="sponsor-logos regular">
+                    <span class="sponsor-logo soon">Em breve</span>
+                    <span class="sponsor-logo soon">Em breve</span>
+                    <span class="sponsor-logo soon">Em breve</span>
+                    <span class="sponsor-logo soon">Em breve</span>
+                    <span class="sponsor-logo soon">Em breve</span>
+                    <span class="sponsor-logo soon">Em breve</span>
+                    <span class="sponsor-logo soon">Em breve</span>
+                    <span class="sponsor-logo soon">Em breve</span>
+                    <span class="sponsor-logo soon">Em breve</span>
+                </div>
+                <p class="sponsors-soon-note">// Patrocinadores a confirmar</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- ===== NEWSLETTER ===== -->
+    <section class="newsletter-section" id="contato">
+        <div class="container narrow">
+            <div class="text-center">
+                <div class="eyebrow">// Fique Dentro</div>
+                <h2 class="section-title-white">Entre na Tribo</h2>
+                <p class="section-subtitle" style="margin: 0 auto 2rem;">Receba novidades em primeira mão: line-up, ingressos, experiências exclusivas e tudo sobre o Arquétipo 2026.</p>
+            </div>
+            <form class="newsletter-form" id="newsletterForm">
+                <div class="form-group">
+                    <input type="text" class="form-control" placeholder="Nome*" required>
+                </div>
+                <div class="form-group">
+                    <input type="email" class="form-control" placeholder="E-mail*" required>
+                </div>
+                <div class="form-group full">
+                    <input type="text" class="form-control" placeholder="Quem você quer ver no palco?">
+                </div>
+                <div class="form-check">
+                    <input type="checkbox" id="privacy" required>
+                    <label for="privacy">Li e aceito a Política de Privacidade da Arquétipo Eventos e autorizo o tratamento e a coleta dos meus dados para uso e recebimento de comunicação.</label>
+                </div>
+                <button type="submit" class="btn btn-primary">Quero Participar</button>
+            </form>
+        </div>
+    </section>
+
+    <!-- ===== FOOTER ===== -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-top">
+                <div class="footer-brand">
+                    <a href="index.html" class="footer-logo">
+                        <span class="logo-icon"><i class="fas fa-bolt"></i></span>
+                        <span class="logo-text">Arquétipo</span>
+                    </a>
+                    <p class="footer-slogan">Por um mundo melhor através da música.<br>04 — 07 Set 2026 / Rio de Janeiro</p>
+                </div>
+
+                <div class="footer-links">
+                    <div class="footer-column">
+                        <h4>Institucional</h4>
+                        <ul>
+                            <li><a href="#">Política de Privacidade</a></li>
+                            <li><a href="#">Termos e Condições</a></li>
+                            <li><a href="#">Direitos Humanos</a></li>
+                            <li><a href="#">Sustentabilidade</a></li>
+                        </ul>
+                    </div>
+
+                    <div class="footer-column">
+                        <h4>Festival</h4>
+                        <ul>
+                            <li><a href="#">História</a></li>
+                            <li><a href="#">Patrocinadores</a></li>
+                            <li><a href="#">Imprensa</a></li>
+                            <li><a href="#">Mapa da Cidade</a></li>
+                        </ul>
+                    </div>
+
+                    <div class="footer-column">
+                        <h4>Explore</h4>
+                        <ul>
+                            <li><a href="ingressos.html">Ingressos</a></li>
+                            <li><a href="lineup.html">Line-up</a></li>
+                            <li><a href="noticias.html">Notícias</a></li>
+                            <li><a href="#">Produtos Oficiais</a></li>
+                        </ul>
+                    </div>
+
+                    <div class="footer-column">
+                        <h4>Contato</h4>
+                        <ul>
+                            <li><a href="#">Trabalhe Conosco</a></li>
+                            <li><a href="#">Seja um Fornecedor</a></li>
+                            <li><a href="#">Parcerias</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+            <div class="footer-social">
+                <a href="#" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+                <a href="#" aria-label="TikTok"><i class="fab fa-tiktok"></i></a>
+                <a href="#" aria-label="Twitter"><i class="fab fa-x-twitter"></i></a>
+                <a href="#" aria-label="Threads"><i class="fab fa-threads"></i></a>
+                <a href="#" aria-label="Spotify"><i class="fab fa-spotify"></i></a>
+                <a href="#" aria-label="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
+                <a href="#" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
+                <a href="#" aria-label="YouTube"><i class="fab fa-youtube"></i></a>
+                <a href="#" aria-label="WhatsApp"><i class="fab fa-whatsapp"></i></a>
+            </div>
+
+            <div class="footer-bottom">
+                <p>Arquétipo Eventos Ltda. · CNPJ <span class="placeholder-mark">a ser informado</span> · <span class="placeholder-mark">Endereço comercial a definir</span></p>
+                <p style="margin-top:8px;color:var(--gray-dark)">© 2026 Arquétipo Eventos. Todos os direitos reservados.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- ===== FLOATING BUTTONS ===== -->
+    <div class="floating-actions">
+        <a href="ingressos.html" class="fab fab-ticket">
+            <i class="fas fa-ticket-alt"></i>
+            <span>Ingressos</span>
+        </a>
+        <a href="#" class="fab fab-whatsapp">
+            <i class="fab fa-whatsapp"></i>
+            <span>WhatsApp</span>
+        </a>
+        <button class="fab fab-back-top" id="backTop" aria-label="Voltar ao topo">
+            <i class="fas fa-chevron-up"></i>
+        </button>
+    </div>
+
+    <!-- ===== SEARCH MODAL ===== -->
+    <div class="search-modal" id="searchModal">
+        <button class="search-close" id="searchClose" aria-label="Fechar busca"><i class="fas fa-times"></i></button>
+        <div class="search-modal-content">
+            <input type="text" id="searchInput" placeholder="Buscar artistas, palcos, setores...">
+            <div class="search-suggestions" id="searchResults"></div>
+        </div>
+    </div>
+
+    <!-- ===== ARTIST MODAL ===== -->
+    <div class="artist-modal" id="artistModal">
+        <button class="artist-modal-close" id="artistModalClose" aria-label="Fechar"><i class="fas fa-times"></i></button>
+        <div class="artist-modal-content">
+            <div class="artist-modal-image" id="artistModalImage"></div>
+            <div class="artist-modal-info">
+                <div class="artist-modal-day" id="artistModalDay"></div>
+                <div class="artist-modal-stage" id="artistModalStage"></div>
+                <h2 class="artist-modal-name" id="artistModalName"></h2>
+                <div class="artist-modal-tags" id="artistModalTags"></div>
+                <p class="artist-modal-bio" id="artistModalBio"></p>
+                <a href="ingressos.html" class="btn btn-primary btn-small">Garantir Ingresso</a>
+            </div>
+      </div>
+    </div>
+
+    <!-- ===== LIGHTBOX ===== -->
+    <div class="artist-modal" id="lightbox">
+        <button class="artist-modal-close" id="lightboxClose" aria-label="Fechar"><i class="fas fa-times"></i></button>
+        <div style="max-width:90vw;max-height:90vh;">
+            <img id="lightboxImg" src="" alt="" style="max-width:100%;max-height:90vh;object-fit:contain;border:1px solid var(--border);">
+        </div>
+    </div>
+
+    <script src="scripts.js"></script>
+</body>
+</html>

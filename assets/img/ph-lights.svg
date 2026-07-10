@@ -1,0 +1,20 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 600" preserveAspectRatio="xMidYMid slice">
+  <defs>
+    <linearGradient id="g" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#1A0202"/>
+      <stop offset="1" stop-color="#2A0505"/>
+    </linearGradient>
+  </defs>
+  <rect width="800" height="600" fill="url(#g)"/>
+  <g opacity="0.6">
+    <polygon points="200,0 0,600 400,600" fill="#E10600" opacity="0.25"/>
+    <polygon points="600,0 400,600 800,600" fill="#FFB800" opacity="0.25"/>
+    <polygon points="400,0 300,600 500,600" fill="#00E676" opacity="0.22"/>
+  </g>
+  <g fill="#F5F5F5" opacity="0.2">
+    <rect x="190" y="40" width="20" height="40"/>
+    <rect x="390" y="40" width="20" height="40"/>
+    <rect x="590" y="40" width="20" height="40"/>
+  </g>
+  <text x="400" y="560" font-family="'Bebas Neue',Impact,sans-serif" font-size="22" fill="#F5F5F5" opacity="0.35" text-anchor="middle" letter-spacing="4">LUZES</text>
+</svg>

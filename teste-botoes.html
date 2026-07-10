@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Teste Botões Flutuantes</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        body { min-height: 300vh; background: linear-gradient(#0A0A0A, #1A1A1A, #0A0A0A); color: #fff; }
+        .scroll-target { padding: 120vh 24px 24px; font-family: sans-serif; }
+    </style>
+</head>
+<body>
+    <div class="scroll-target">
+        <h1>Role para baixo para testar o botão de voltar ao topo</h1>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+        <p style="margin-top:140vh">Você está no meio da página.</p>
+        <p style="margin-top:120vh">Fim da página.</p>
+    </div>
+
+    <div class="floating-actions">
+        <a href="ingressos.html" class="fab fab-ticket">
+            <i class="fas fa-ticket-alt"></i>
+            <span>Ingressos</span>
+        </a>
+        <a href="#" class="fab fab-whatsapp">
+            <i class="fab fa-whatsapp"></i>
+            <span>WhatsApp</span>
+        </a>
+        <button class="fab fab-back-top" id="backTop" aria-label="Voltar ao topo">
+            <i class="fas fa-chevron-up"></i>
+        </button>
+    </div>
+
+    <script src="scripts.js"></script>
+</body>
+</html>

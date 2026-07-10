@@ -1,0 +1,421 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Line-up 2026 — Arquétipo Eventos</title>
+    <meta name="description" content="Confira o line-up completo da Arquétipo Eventos 2026. Os maiores artistas nacionais e internacionais em um só lugar.">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Montserrat:wght@300;400;600;700;800&family=Space+Mono:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+    <!-- ===== LOADING SCREEN ===== -->
+    <div class="loader" id="loader">
+        <div class="loader-logo">ARQUÉTIPO</div>
+        <div class="loader-bar"><div class="loader-bar-fill"></div></div>
+    </div>
+
+    <!-- ===== HEADER ===== -->
+    <header class="header" id="header">
+        <div class="container header-inner">
+            <a href="index.html" class="logo">
+                <span class="logo-icon"><i class="fas fa-bolt"></i></span>
+                <span class="logo-text">Arquétipo</span>
+            </a>
+            <nav class="main-nav" id="mainNav">
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="lineup.html" class="active">Line-up</a></li>
+                    <li><a href="ingressos.html">Ingressos</a></li>
+                    <li><a href="ingressos.html#informacoes">Info</a></li>
+                    <li><a href="noticias.html">Notícias</a></li>
+                    <li><a href="ingressos.html#experiencias">Experiências</a></li>
+                </ul>
+            </nav>
+            <div class="header-actions">
+                <button class="search-btn" aria-label="Buscar"><i class="fas fa-search"></i></button>
+                <a href="ingressos.html" class="btn btn-small btn-outline">Ingressos</a>
+                <button class="menu-toggle" id="menuToggle" aria-label="Menu">
+                    <span></span><span></span><span></span>
+                </button>
+            </div>
+        </div>
+    </header>
+
+    <!-- ===== PAGE HEADER ===== -->
+    <section class="page-header">
+        <div class="container">
+            <div class="eyebrow" style="text-align:center">// 04 — 07 Setembro 2026</div>
+            <h1>Line-up 2026</h1>
+            <p>Quatro dias. Três palcos. Mais de 40 atrações. A tribo inteira reunida na Cidade do Rock.</p>
+        </div>
+    </section>
+
+    <!-- ===== MARQUEE ===== -->
+    <div class="marquee">
+        <div class="marquee-content">
+            <span>PALCO PRINCIPAL <span class="marquee-dot">●</span> PALCO SUNSET <span class="marquee-dot">●</span> NEW DANCE ORDER <span class="marquee-dot">●</span> PALCO PRINCIPAL <span class="marquee-dot">●</span> PALCO SUNSET <span class="marquee-dot">●</span> NEW DANCE ORDER <span class="marquee-dot">●</span></span>
+            <span>PALCO PRINCIPAL <span class="marquee-dot">●</span> PALCO SUNSET <span class="marquee-dot">●</span> NEW DANCE ORDER <span class="marquee-dot">●</span> PALCO PRINCIPAL <span class="marquee-dot">●</span> PALCO SUNSET <span class="marquee-dot">●</span> NEW DANCE ORDER <span class="marquee-dot">●</span></span>
+        </div>
+    </div>
+
+    <!-- ===== LINEUP ===== -->
+    <section class="lineup-section" id="lineup">
+        <div class="container">
+            <!-- Stage filter -->
+            <div class="lineup-tabs">
+                <button class="lineup-tab active" data-stage="all">Todos os Palcos</button>
+                <button class="lineup-tab" data-stage="principal">Palco Principal</button>
+                <button class="lineup-tab" data-stage="sunset">Palco Sunset</button>
+                <button class="lineup-tab" data-stage="dance">New Dance Order</button>
+            </div>
+
+            <!-- Day filter -->
+            <div class="lineup-day-tabs">
+                <button class="lineup-day-tab active" data-day="all">Todos os Dias</button>
+                <button class="lineup-day-tab" data-day="04">04 Set · Sexta</button>
+                <button class="lineup-day-tab" data-day="05">05 Set · Sábado</button>
+                <button class="lineup-day-tab" data-day="06">06 Set · Domingo</button>
+                <button class="lineup-day-tab" data-day="07">07 Set · Feriado</button>
+            </div>
+
+            <div class="lineup-notice">
+                <i class="fas fa-info-circle"></i>
+                <span><strong>Line-up ilustrativo.</strong> Nomes exibidos são meramente exemplificativos e estão sujeitos a confirmação contratual. A lista oficial será divulgada em breve.</span>
+            </div>
+
+            <div class="lineup-grid">
+                <div class="lineup-card" data-stage="principal" data-day="04">
+                    <div class="lineup-card-image" style="background-image: url('assets/img/real-stage.jpg');"></div>
+                    <div class="lineup-card-overlay">
+                        <div class="lineup-card-day">04 de Setembro</div>
+                        <div class="lineup-card-stage">Palco Principal</div>
+                        <h3>Foo Fighters</h3>
+                        <div class="lineup-card-tags">
+                            <span class="lineup-card-tag headliner">Headliner</span>
+                            <span class="lineup-card-tag">Rock</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="lineup-card" data-stage="sunset" data-day="04">
+                    <div class="lineup-card-image" style="background-image: url('assets/img/real-band.jpg');"></div>
+                    <div class="lineup-card-overlay">
+                        <div class="lineup-card-day">04 de Setembro</div>
+                        <div class="lineup-card-stage">Palco Sunset</div>
+                        <h3>Capital Inicial</h3>
+                        <div class="lineup-card-tags">
+                            <span class="lineup-card-tag">Rock Nacional</span>
+                            <span class="lineup-card-tag">Convidado Especial</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="lineup-card" data-stage="dance" data-day="04">
+                    <div class="lineup-card-image" style="background-image: url('assets/img/real-band.jpg');"></div>
+                    <div class="lineup-card-overlay">
+                        <div class="lineup-card-day">04 de Setembro</div>
+                        <div class="lineup-card-stage">New Dance Order</div>
+                        <h3>Hot Milk</h3>
+                        <div class="lineup-card-tags">
+                            <span class="lineup-card-tag">Indie Rock</span>
+                            <span class="lineup-card-tag">UK</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="lineup-card" data-stage="principal" data-day="05">
+                    <div class="lineup-card-image" style="background-image: url('assets/img/real-crowd.jpg');"></div>
+                    <div class="lineup-card-overlay">
+                        <div class="lineup-card-day">05 de Setembro</div>
+                        <div class="lineup-card-stage">Palco Principal</div>
+                        <h3>Beyoncé</h3>
+                        <div class="lineup-card-tags">
+                            <span class="lineup-card-tag headliner">Headliner</span>
+                            <span class="lineup-card-tag">Pop</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="lineup-card" data-stage="sunset" data-day="05">
+                    <div class="lineup-card-image" style="background-image: url('assets/img/real-concert.jpg');"></div>
+                    <div class="lineup-card-overlay">
+                        <div class="lineup-card-day">05 de Setembro</div>
+                        <div class="lineup-card-stage">Palco Sunset</div>
+                        <h3>Ivete Sangalo</h3>
+                        <div class="lineup-card-tags">
+                            <span class="lineup-card-tag">Axé</span>
+                            <span class="lineup-card-tag">Brasil</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="lineup-card" data-stage="principal" data-day="05">
+                    <div class="lineup-card-image" style="background-image: url('assets/img/real-stage.jpg');"></div>
+                    <div class="lineup-card-overlay">
+                        <div class="lineup-card-day">05 de Setembro</div>
+                        <div class="lineup-card-stage">Palco Principal</div>
+                        <h3>Raimundos</h3>
+                        <div class="lineup-card-tags">
+                            <span class="lineup-card-tag">Punk Rock</span>
+                            <span class="lineup-card-tag">Brasil</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="lineup-card" data-stage="dance" data-day="06">
+                    <div class="lineup-card-image" style="background-image: url('assets/img/real-dj.jpg');"></div>
+                    <div class="lineup-card-overlay">
+                        <div class="lineup-card-day">06 de Setembro</div>
+                        <div class="lineup-card-stage">New Dance Order</div>
+                        <h3>Martin Garrix</h3>
+                        <div class="lineup-card-tags">
+                            <span class="lineup-card-tag headliner">Headliner</span>
+                            <span class="lineup-card-tag">Eletrônica</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="lineup-card" data-stage="principal" data-day="06">
+                    <div class="lineup-card-image" style="background-image: url('assets/img/real-lights.jpg');"></div>
+                    <div class="lineup-card-overlay">
+                        <div class="lineup-card-day">06 de Setembro</div>
+                        <div class="lineup-card-stage">Palco Principal</div>
+                        <h3>Bruno Mars</h3>
+                        <div class="lineup-card-tags">
+                            <span class="lineup-card-tag headliner">Headliner</span>
+                            <span class="lineup-card-tag">Pop / R&B</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="lineup-card" data-stage="sunset" data-day="06">
+                    <div class="lineup-card-image" style="background-image: url('assets/img/real-crowd.jpg');"></div>
+                    <div class="lineup-card-overlay">
+                        <div class="lineup-card-day">06 de Setembro</div>
+                        <div class="lineup-card-stage">Palco Sunset</div>
+                        <h3>Dead Fish</h3>
+                        <div class="lineup-card-tags">
+                            <span class="lineup-card-tag">Hardcore</span>
+                            <span class="lineup-card-tag">Underground</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="lineup-card" data-stage="dance" data-day="07">
+                    <div class="lineup-card-image" style="background-image: url('assets/img/real-dj.jpg');"></div>
+                    <div class="lineup-card-overlay">
+                        <div class="lineup-card-day">07 de Setembro</div>
+                        <div class="lineup-card-stage">New Dance Order</div>
+                        <h3>Fatboy Slim</h3>
+                        <div class="lineup-card-tags">
+                            <span class="lineup-card-tag headliner">Headliner</span>
+                            <span class="lineup-card-tag">Eletrônica</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="lineup-card" data-stage="sunset" data-day="07">
+                    <div class="lineup-card-image" style="background-image: url('assets/img/real-band.jpg');"></div>
+                    <div class="lineup-card-overlay">
+                        <div class="lineup-card-day">07 de Setembro</div>
+                        <div class="lineup-card-stage">Palco Sunset</div>
+                        <h3>Rise Against</h3>
+                        <div class="lineup-card-tags">
+                            <span class="lineup-card-tag">Punk Rock</span>
+                            <span class="lineup-card-tag">Internacional</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="lineup-card" data-stage="sunset" data-day="07">
+                    <div class="lineup-card-image" style="background-image: url('assets/img/real-lights.jpg');"></div>
+                    <div class="lineup-card-overlay">
+                        <div class="lineup-card-day">07 de Setembro</div>
+                        <div class="lineup-card-stage">Palco Sunset</div>
+                        <h3>Garotos Podres</h3>
+                        <div class="lineup-card-tags">
+                            <span class="lineup-card-tag">Punk Rock</span>
+                            <span class="lineup-card-tag">Clássico</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ===== COUNTDOWN ===== -->
+    <section class="countdown-section">
+        <div class="container">
+            <div class="eyebrow" style="text-align:center">// A Contagem Começou</div>
+            <h2 class="countdown-title">Faltam poucos dias para a tribo se reunir</h2>
+            <div class="countdown" id="countdown">
+                <div class="countdown-item">
+                    <div class="countdown-number" id="countdown-days">00</div>
+                    <div class="countdown-label">Dias</div>
+                </div>
+                <div class="countdown-item">
+                    <div class="countdown-number" id="countdown-hours">00</div>
+                    <div class="countdown-label">Horas</div>
+                </div>
+                <div class="countdown-item">
+                    <div class="countdown-number" id="countdown-minutes">00</div>
+                    <div class="countdown-label">Minutos</div>
+                </div>
+                <div class="countdown-item">
+                    <div class="countdown-number" id="countdown-seconds">00</div>
+                    <div class="countdown-label">Segundos</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ===== NEWSLETTER ===== -->
+    <section class="newsletter-section" id="contato">
+        <div class="container narrow">
+            <div class="text-center">
+                <div class="eyebrow">// Fique Dentro</div>
+                <h2 class="section-title-white">Entre na Tribo</h2>
+                <p class="section-subtitle" style="margin: 0 auto 2rem;">Receba novidades em primeira mão sobre o Arquétipo 2026.</p>
+            </div>
+            <form class="newsletter-form" id="newsletterForm">
+                <div class="form-group"><input type="text" class="form-control" placeholder="Nome*" required></div>
+                <div class="form-group"><input type="email" class="form-control" placeholder="E-mail*" required></div>
+                <div class="form-group full"><input type="text" class="form-control" placeholder="Quem você quer ver no palco?"></div>
+                <div class="form-check">
+                    <input type="checkbox" id="privacy" required>
+                    <label for="privacy">Li e aceito a Política de Privacidade da Arquétipo Eventos e autorizo o tratamento e a coleta dos meus dados.</label>
+                </div>
+                <button type="submit" class="btn btn-primary">Quero Participar</button>
+            </form>
+        </div>
+    </section>
+
+    <!-- ===== SPONSORS ===== -->
+    <section class="sponsors-section">
+        <div class="container">
+            <div class="sponsor-tier">
+                <h4>Patrocinador Master</h4>
+                <div class="sponsor-logos master"><span class="sponsor-logo soon">Em breve</span></div>
+            </div>
+            <div class="sponsor-tier">
+                <h4>Parceiros Institucionais</h4>
+                <div class="sponsor-logos institutional">
+                    <span class="sponsor-logo soon">Em breve</span>
+                    <span class="sponsor-logo soon">Em breve</span>
+                    <span class="sponsor-logo soon">Em breve</span>
+                    <span class="sponsor-logo soon">Em breve</span>
+                </div>
+            </div>
+            <div class="sponsor-tier">
+                <h4>Patrocinadores</h4>
+                <div class="sponsor-logos regular">
+                    <span class="sponsor-logo soon">Em breve</span>
+                    <span class="sponsor-logo soon">Em breve</span>
+                    <span class="sponsor-logo soon">Em breve</span>
+                    <span class="sponsor-logo soon">Em breve</span>
+                    <span class="sponsor-logo soon">Em breve</span>
+                    <span class="sponsor-logo soon">Em breve</span>
+                    <span class="sponsor-logo soon">Em breve</span>
+                    <span class="sponsor-logo soon">Em breve</span>
+                    <span class="sponsor-logo soon">Em breve</span>
+                </div>
+                <p class="sponsors-soon-note">// Patrocinadores a confirmar</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- ===== FOOTER ===== -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-top">
+                <div class="footer-brand">
+                    <a href="index.html" class="footer-logo">
+                        <span class="logo-icon"><i class="fas fa-bolt"></i></span>
+                        <span class="logo-text">Arquétipo</span>
+                    </a>
+                    <p class="footer-slogan">Por um mundo melhor através da música.<br>04 — 07 Set 2026 / Rio de Janeiro</p>
+                </div>
+                <div class="footer-links">
+                    <div class="footer-column"><h4>Institucional</h4><ul>
+                        <li><a href="#">Política de Privacidade</a></li>
+                        <li><a href="#">Termos e Condições</a></li>
+                        <li><a href="#">Direitos Humanos</a></li>
+                        <li><a href="#">Sustentabilidade</a></li>
+                    </ul></div>
+                    <div class="footer-column"><h4>Festival</h4><ul>
+                        <li><a href="#">História</a></li>
+                        <li><a href="#">Patrocinadores</a></li>
+                        <li><a href="#">Imprensa</a></li>
+                        <li><a href="#">Mapa da Cidade</a></li>
+                    </ul></div>
+                    <div class="footer-column"><h4>Explore</h4><ul>
+                        <li><a href="ingressos.html">Ingressos</a></li>
+                        <li><a href="lineup.html">Line-up</a></li>
+                        <li><a href="noticias.html">Notícias</a></li>
+                        <li><a href="#">Produtos Oficiais</a></li>
+                    </ul></div>
+                    <div class="footer-column"><h4>Contato</h4><ul>
+                        <li><a href="#">Trabalhe Conosco</a></li>
+                        <li><a href="#">Seja um Fornecedor</a></li>
+                        <li><a href="#">Parcerias</a></li>
+                    </ul></div>
+                </div>
+            </div>
+            <div class="footer-social">
+                <a href="#" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+                <a href="#" aria-label="TikTok"><i class="fab fa-tiktok"></i></a>
+                <a href="#" aria-label="Twitter"><i class="fab fa-x-twitter"></i></a>
+                <a href="#" aria-label="Threads"><i class="fab fa-threads"></i></a>
+                <a href="#" aria-label="Spotify"><i class="fab fa-spotify"></i></a>
+                <a href="#" aria-label="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
+                <a href="#" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
+                <a href="#" aria-label="YouTube"><i class="fab fa-youtube"></i></a>
+                <a href="#" aria-label="WhatsApp"><i class="fab fa-whatsapp"></i></a>
+            </div>
+            <div class="footer-bottom">
+                <p>Arquétipo Eventos Ltda. · CNPJ <span class="placeholder-mark">a ser informado</span> · <span class="placeholder-mark">Endereço comercial a definir</span></p>
+                <p style="margin-top:8px;color:var(--gray-dark)">© 2026 Arquétipo Eventos. Todos os direitos reservados.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- ===== FLOATING BUTTONS ===== -->
+    <div class="floating-actions">
+        <a href="ingressos.html" class="fab fab-ticket"><i class="fas fa-ticket-alt"></i><span>Ingressos</span></a>
+        <a href="#" class="fab fab-whatsapp"><i class="fab fa-whatsapp"></i><span>WhatsApp</span></a>
+        <button class="fab fab-back-top" id="backTop" aria-label="Voltar ao topo"><i class="fas fa-chevron-up"></i></button>
+    </div>
+
+    <!-- ===== SEARCH MODAL ===== -->
+    <div class="search-modal" id="searchModal">
+        <button class="search-close" id="searchClose" aria-label="Fechar busca"><i class="fas fa-times"></i></button>
+        <div class="search-modal-content">
+            <input type="text" id="searchInput" placeholder="Buscar artistas, palcos, setores...">
+            <div class="search-suggestions" id="searchResults"></div>
+        </div>
+    </div>
+
+    <!-- ===== ARTIST MODAL ===== -->
+    <div class="artist-modal" id="artistModal">
+        <button class="artist-modal-close" id="artistModalClose" aria-label="Fechar"><i class="fas fa-times"></i></button>
+        <div class="artist-modal-content">
+            <div class="artist-modal-image" id="artistModalImage"></div>
+            <div class="artist-modal-info">
+                <div class="artist-modal-day" id="artistModalDay"></div>
+                <div class="artist-modal-stage" id="artistModalStage"></div>
+                <h2 class="artist-modal-name" id="artistModalName"></h2>
+                <div class="artist-modal-tags" id="artistModalTags"></div>
+                <p class="artist-modal-bio" id="artistModalBio"></p>
+                <a href="ingressos.html" class="btn btn-primary btn-small">Garantir Ingresso</a>
+            </div>
+        </div>
+    </div>
+
+    <script src="scripts.js"></script>
+</body>
+</html>

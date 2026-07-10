@@ -1,0 +1,50 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1920 1080" preserveAspectRatio="xMidYMid slice">
+  <defs>
+    <linearGradient id="g" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#E10600"/>
+      <stop offset="0.45" stop-color="#9B0000"/>
+      <stop offset="1" stop-color="#1A0202"/>
+    </linearGradient>
+    <radialGradient id="r" cx="0.5" cy="0.28" r="0.75">
+      <stop offset="0" stop-color="#FF2A1A" stop-opacity="0.9"/>
+      <stop offset="0.5" stop-color="#E10600" stop-opacity="0.6"/>
+      <stop offset="1" stop-color="#9B0000" stop-opacity="0"/>
+    </radialGradient>
+    <radialGradient id="rg" cx="0.18" cy="0.15" r="0.4">
+      <stop offset="0" stop-color="#00E676" stop-opacity="0.35"/>
+      <stop offset="1" stop-color="#00E676" stop-opacity="0"/>
+    </radialGradient>
+  </defs>
+  <rect width="1920" height="1080" fill="url(#g)"/>
+  <rect width="1920" height="1080" fill="url(#r)"/>
+  <rect width="1920" height="1080" fill="url(#rg)"/>
+  <!-- stage light beams (bright) -->
+  <g opacity="0.7">
+    <polygon points="960,0 620,1080 1300,1080" fill="#FFB800" opacity="0.18"/>
+    <polygon points="480,0 180,1080 780,1080" fill="#00E676" opacity="0.16"/>
+    <polygon points="1440,0 1140,1080 1740,1080" fill="#FFB800" opacity="0.16"/>
+  </g>
+  <!-- stage rig truss -->
+  <g stroke="#F5F5F5" stroke-width="2" opacity="0.35" fill="none">
+    <line x1="200" y1="120" x2="1720" y2="120"/>
+    <line x1="200" y1="140" x2="1720" y2="140"/>
+  </g>
+  <g fill="#FFD700" opacity="0.5">
+    <rect x="280" y="140" width="16" height="22"/>
+    <rect x="520" y="140" width="16" height="22"/>
+    <rect x="760" y="140" width="16" height="22"/>
+    <rect x="1000" y="140" width="16" height="22"/>
+    <rect x="1240" y="140" width="16" height="22"/>
+    <rect x="1480" y="140" width="16" height="22"/>
+  </g>
+  <!-- spotlight circles -->
+  <g fill="none" stroke="#FFFFFF" stroke-width="3" opacity="0.4">
+    <circle cx="960" cy="420" r="75"/>
+    <circle cx="960" cy="420" r="115"/>
+  </g>
+  <!-- crowd silhouette -->
+  <path d="M0,920 q120,-40 240,0 q120,40 240,0 q120,-40 240,0 q120,40 240,0 q120,-40 240,0 q120,40 240,0 q120,-40 240,0 v160 H0 Z" fill="#050505"/>
+  <!-- stage line -->
+  <rect x="0" y="850" width="1920" height="6" fill="#FFB800"/>
+  <text x="960" y="570" font-family="'Bebas Neue',Impact,sans-serif" font-size="56" fill="#FFFFFF" opacity="0.45" text-anchor="middle" letter-spacing="10">IMAGEM ILUSTRATIVA</text>
+</svg>

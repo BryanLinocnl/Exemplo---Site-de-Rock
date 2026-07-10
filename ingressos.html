@@ -1,0 +1,369 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ingressos — Arquétipo Eventos 2026</title>
+    <meta name="description" content="Garanta seu ingresso para a Arquétipo Eventos 2026. Escolha seu setor e viva a experiência.">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Montserrat:wght@300;400;600;700;800&family=Space+Mono:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+    <!-- ===== LOADING SCREEN ===== -->
+    <div class="loader" id="loader">
+        <div class="loader-logo">ARQUÉTIPO</div>
+        <div class="loader-bar"><div class="loader-bar-fill"></div></div>
+    </div>
+
+    <!-- ===== HEADER ===== -->
+    <header class="header" id="header">
+        <div class="container header-inner">
+            <a href="index.html" class="logo">
+                <span class="logo-icon"><i class="fas fa-bolt"></i></span>
+                <span class="logo-text">Arquétipo</span>
+            </a>
+            <nav class="main-nav" id="mainNav">
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="lineup.html">Line-up</a></li>
+                    <li><a href="ingressos.html" class="active">Ingressos</a></li>
+                    <li><a href="#informacoes">Info</a></li>
+                    <li><a href="noticias.html">Notícias</a></li>
+                    <li><a href="#experiencias">Experiências</a></li>
+                </ul>
+            </nav>
+            <div class="header-actions">
+                <button class="search-btn" aria-label="Buscar"><i class="fas fa-search"></i></button>
+                <a href="ingressos.html" class="btn btn-small btn-outline">Ingressos</a>
+                <button class="menu-toggle" id="menuToggle" aria-label="Menu">
+                    <span></span><span></span><span></span>
+                </button>
+            </div>
+        </div>
+    </header>
+
+    <!-- ===== PAGE HEADER ===== -->
+    <section class="page-header">
+        <div class="container">
+            <div class="eyebrow" style="text-align:center">// 04 — 07 Setembro 2026</div>
+            <h1>Garanta Seu Ingresso</h1>
+            <p>Escolha a experiência que combina com você. A tribo te espera.</p>
+        </div>
+    </section>
+
+    <!-- ===== TICKETS ===== -->
+    <section class="tickets-section" id="ingressos">
+        <div class="container">
+            <div class="tickets-intro">
+                <div class="eyebrow" style="text-align:center">// Setores Disponíveis</div>
+                <h2 class="section-title centered">Escolha Seu Setor</h2>
+                <p class="section-subtitle" style="margin: 0 auto;">Todos os setores incluem acesso aos palcos, áreas de alimentação e experiências da Cidade do Rock. Ingressos válidos para um dia de evento.</p>
+            </div>
+
+            <div class="tickets-grid">
+                <div class="ticket-card">
+                    <div class="ticket-icon"><i class="fas fa-shoe-prints"></i></div>
+                    <h3>Pista</h3>
+                    <div class="ticket-price">R$ 450<span>/dia</span></div>
+                    <ul class="ticket-features">
+                        <li><i class="fas fa-check"></i> Acesso à pista geral</li>
+                        <li><i class="fas fa-check"></i> Todos os palcos liberados</li>
+                        <li><i class="fas fa-check"></i> Áreas de alimentação</li>
+                        <li><i class="fas fa-check"></i> Banheiros comuns</li>
+                        <li class="unavailable"><i class="fas fa-times"></i> Área premium</li>
+                        <li class="unavailable"><i class="fas fa-times"></i> Open bar</li>
+                    </ul>
+                    <a href="#" class="btn btn-outline-light btn-full">Comprar Ingresso</a>
+                </div>
+
+                <div class="ticket-card featured">
+                    <div class="ticket-badge">Mais Popular</div>
+                    <div class="ticket-icon"><i class="fas fa-star"></i></div>
+                    <h3>Pista Premium</h3>
+                    <div class="ticket-price">R$ 780<span>/dia</span></div>
+                    <ul class="ticket-features">
+                        <li><i class="fas fa-check"></i> Acesso à pista premium</li>
+                        <li><i class="fas fa-check"></i> Área exclusiva front stage</li>
+                        <li><i class="fas fa-check"></i> Todos os palcos liberados</li>
+                        <li><i class="fas fa-check"></i> Banheiros exclusivos</li>
+                        <li><i class="fas fa-check"></i> Fast pass na entrada</li>
+                        <li class="unavailable"><i class="fas fa-times"></i> Open bar</li>
+                    </ul>
+                    <a href="#" class="btn btn-primary btn-full">Comprar Ingresso</a>
+                </div>
+
+                <div class="ticket-card">
+                    <div class="ticket-icon"><i class="fas fa-couch"></i></div>
+                    <h3>Comfort Zone</h3>
+                    <div class="ticket-price">R$ 1.250<span>/dia</span></div>
+                    <ul class="ticket-features">
+                        <li><i class="fas fa-check"></i> Área com assentos premium</li>
+                        <li><i class="fas fa-check"></i> Vista privilegiada do palco</li>
+                        <li><i class="fas fa-check"></i> Open bar selecionado</li>
+                        <li><i class="fas fa-check"></i> Lounge climatizado</li>
+                        <li><i class="fas fa-check"></i> Banheiros exclusivos</li>
+                        <li><i class="fas fa-check"></i> Estacionamento VIP</li>
+                    </ul>
+                    <a href="#" class="btn btn-outline-light btn-full">Comprar Ingresso</a>
+                </div>
+            </div>
+
+            <div class="text-center">
+                <h3 class="section-title-white" style="margin-bottom: 16px;">Ingressos por Dia</h3>
+                <p style="color: var(--gray); margin-bottom: 28px; font-family: var(--font-mono); font-size:0.85rem; letter-spacing:1px;">// Selecione o dia que você quer viver com intensidade</p>
+                <div class="ticket-days">
+                    <a href="#" class="btn btn-outline-light">04 Set · Sexta</a>
+                    <a href="#" class="btn btn-outline-light">05 Set · Sábado</a>
+                    <a href="#" class="btn btn-outline-light">06 Set · Domingo</a>
+                    <a href="#" class="btn btn-primary">07 Set · Feriado</a>
+                </div>
+                <div style="margin-top: 20px;">
+                    <a href="#" class="btn btn-green btn-large">Passe Completo — 4 Dias · R$ 1.800</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ===== INFO ===== -->
+    <section class="info-section" id="informacoes">
+        <div class="container">
+            <div class="text-center" style="margin-bottom: 50px;">
+                <div class="eyebrow">// Antes de Comprar</div>
+                <h2 class="section-title centered">Informações Importantes</h2>
+                <p class="section-subtitle" style="margin: 0 auto;">Tudo que você precisa saber antes de garantir seu ingresso.</p>
+            </div>
+
+            <div class="info-grid">
+                <div class="info-card">
+                    <i class="fas fa-id-card"></i>
+                    <h3>Meia Entrada</h3>
+                    <p>Estudantes, idosos, PCDs e jovens de 15 a 29 anos têm direito à meia-entrada mediante comprovação.</p>
+                </div>
+                <div class="info-card">
+                    <i class="fas fa-exchange-alt"></i>
+                    <h3>Transferência</h3>
+                    <p>Nomeação do ingresso disponível até 48h antes do evento pela plataforma oficial.</p>
+                </div>
+                <div class="info-card">
+                    <i class="fas fa-child"></i>
+                    <h3>Menores</h3>
+                    <p>Crianças até 10 anos não pagam, desde que acompanhadas por um responsável maior.</p>
+                </div>
+                <div class="info-card">
+                    <i class="fas fa-shield-alt"></i>
+                    <h3>Segurança</h3>
+                    <p>Segurança reforçada, equipe médica 24h e postos de apoio distribuídos por toda a Cidade do Rock.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ===== EXPERIENCES ===== -->
+    <section class="info-section" id="experiencias" style="background: var(--bg-2); border-top: 1px solid var(--border);">
+        <div class="container">
+            <div class="text-center" style="margin-bottom: 50px;">
+                <div class="eyebrow">// Além da Música</div>
+                <h2 class="section-title centered">Experiências Exclusivas</h2>
+                <p class="section-subtitle" style="margin: 0 auto;">A Arquétipo preparou experiências únicas para tornar seu dia ainda mais especial.</p>
+            </div>
+
+            <div class="info-grid">
+                <div class="info-card">
+                    <i class="fas fa-utensils"></i>
+                    <h3>Gourmet Square</h3>
+                    <p>Espaço gastronômico com chefs renomados e opções para todos os gostos.</p>
+                </div>
+                <div class="info-card">
+                    <i class="fas fa-gamepad"></i>
+                    <h3>Game Play</h3>
+                    <p>Arena de games, realidade virtual e experiências imersivas para todos os públicos.</p>
+                </div>
+                <div class="info-card">
+                    <i class="fas fa-paint-brush"></i>
+                    <h3>Arte & Design</h3>
+                    <p>Intervenções artísticas, instalações e galerias ao ar livre para registrar tudo.</p>
+                </div>
+                <div class="info-card">
+                    <i class="fas fa-spa"></i>
+                    <h3>Relax Zone</h3>
+                    <p>Área de descanso com massagens, aromaterapia e espaços de bem-estar.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ===== COUNTDOWN ===== -->
+    <section class="countdown-section">
+        <div class="container">
+            <div class="eyebrow" style="text-align:center">// A Contagem Começou</div>
+            <h2 class="countdown-title">Garante logo antes que acabe</h2>
+            <div class="countdown" id="countdown">
+                <div class="countdown-item">
+                    <div class="countdown-number" id="countdown-days">00</div>
+                    <div class="countdown-label">Dias</div>
+                </div>
+                <div class="countdown-item">
+                    <div class="countdown-number" id="countdown-hours">00</div>
+                    <div class="countdown-label">Horas</div>
+                </div>
+                <div class="countdown-item">
+                    <div class="countdown-number" id="countdown-minutes">00</div>
+                    <div class="countdown-label">Minutos</div>
+                </div>
+                <div class="countdown-item">
+                    <div class="countdown-number" id="countdown-seconds">00</div>
+                    <div class="countdown-label">Segundos</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ===== NEWSLETTER ===== -->
+    <section class="newsletter-section" id="contato">
+        <div class="container narrow">
+            <div class="text-center">
+                <div class="eyebrow">// Fique Dentro</div>
+                <h2 class="section-title-white">Entre na Tribo</h2>
+                <p class="section-subtitle" style="margin: 0 auto 2rem;">Receba novidades em primeira mão sobre o Arquétipo 2026.</p>
+            </div>
+            <form class="newsletter-form" id="newsletterForm">
+                <div class="form-group"><input type="text" class="form-control" placeholder="Nome*" required></div>
+                <div class="form-group"><input type="email" class="form-control" placeholder="E-mail*" required></div>
+                <div class="form-group full"><input type="text" class="form-control" placeholder="Qual setor você quer conhecer?"></div>
+                <div class="form-check">
+                    <input type="checkbox" id="privacy" required>
+                    <label for="privacy">Li e aceito a Política de Privacidade da Arquétipo Eventos e autorizo o tratamento e a coleta dos meus dados.</label>
+                </div>
+                <button type="submit" class="btn btn-primary">Quero Participar</button>
+            </form>
+        </div>
+    </section>
+
+    <!-- ===== SPONSORS ===== -->
+    <section class="sponsors-section">
+        <div class="container">
+            <div class="sponsor-tier">
+                <h4>Patrocinador Master</h4>
+                <div class="sponsor-logos master"><span class="sponsor-logo soon">Em breve</span></div>
+            </div>
+            <div class="sponsor-tier">
+                <h4>Parceiros Institucionais</h4>
+                <div class="sponsor-logos institutional">
+                    <span class="sponsor-logo soon">Em breve</span>
+                    <span class="sponsor-logo soon">Em breve</span>
+                    <span class="sponsor-logo soon">Em breve</span>
+                    <span class="sponsor-logo soon">Em breve</span>
+                </div>
+            </div>
+            <div class="sponsor-tier">
+                <h4>Patrocinadores</h4>
+                <div class="sponsor-logos regular">
+                    <span class="sponsor-logo soon">Em breve</span>
+                    <span class="sponsor-logo soon">Em breve</span>
+                    <span class="sponsor-logo soon">Em breve</span>
+                    <span class="sponsor-logo soon">Em breve</span>
+                    <span class="sponsor-logo soon">Em breve</span>
+                    <span class="sponsor-logo soon">Em breve</span>
+                    <span class="sponsor-logo soon">Em breve</span>
+                    <span class="sponsor-logo soon">Em breve</span>
+                    <span class="sponsor-logo soon">Em breve</span>
+                </div>
+                <p class="sponsors-soon-note">// Patrocinadores a confirmar</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- ===== FOOTER ===== -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-top">
+                <div class="footer-brand">
+                    <a href="index.html" class="footer-logo">
+                        <span class="logo-icon"><i class="fas fa-bolt"></i></span>
+                        <span class="logo-text">Arquétipo</span>
+                    </a>
+                    <p class="footer-slogan">Por um mundo melhor através da música.<br>04 — 07 Set 2026 / Rio de Janeiro</p>
+                </div>
+                <div class="footer-links">
+                    <div class="footer-column"><h4>Institucional</h4><ul>
+                        <li><a href="#">Política de Privacidade</a></li>
+                        <li><a href="#">Termos e Condições</a></li>
+                        <li><a href="#">Direitos Humanos</a></li>
+                        <li><a href="#">Sustentabilidade</a></li>
+                    </ul></div>
+                    <div class="footer-column"><h4>Festival</h4><ul>
+                        <li><a href="#">História</a></li>
+                        <li><a href="#">Patrocinadores</a></li>
+                        <li><a href="#">Imprensa</a></li>
+                        <li><a href="#">Mapa da Cidade</a></li>
+                    </ul></div>
+                    <div class="footer-column"><h4>Explore</h4><ul>
+                        <li><a href="ingressos.html">Ingressos</a></li>
+                        <li><a href="lineup.html">Line-up</a></li>
+                        <li><a href="noticias.html">Notícias</a></li>
+                        <li><a href="#">Produtos Oficiais</a></li>
+                    </ul></div>
+                    <div class="footer-column"><h4>Contato</h4><ul>
+                        <li><a href="#">Trabalhe Conosco</a></li>
+                        <li><a href="#">Seja um Fornecedor</a></li>
+                        <li><a href="#">Parcerias</a></li>
+                    </ul></div>
+                </div>
+            </div>
+            <div class="footer-social">
+                <a href="#" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+                <a href="#" aria-label="TikTok"><i class="fab fa-tiktok"></i></a>
+                <a href="#" aria-label="Twitter"><i class="fab fa-x-twitter"></i></a>
+                <a href="#" aria-label="Threads"><i class="fab fa-threads"></i></a>
+                <a href="#" aria-label="Spotify"><i class="fab fa-spotify"></i></a>
+                <a href="#" aria-label="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
+                <a href="#" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
+                <a href="#" aria-label="YouTube"><i class="fab fa-youtube"></i></a>
+                <a href="#" aria-label="WhatsApp"><i class="fab fa-whatsapp"></i></a>
+            </div>
+            <div class="footer-bottom">
+                <p>Arquétipo Eventos Ltda. · CNPJ <span class="placeholder-mark">a ser informado</span> · <span class="placeholder-mark">Endereço comercial a definir</span></p>
+                <p style="margin-top:8px;color:var(--gray-dark)">© 2026 Arquétipo Eventos. Todos os direitos reservados.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- ===== FLOATING BUTTONS ===== -->
+    <div class="floating-actions">
+        <a href="ingressos.html" class="fab fab-ticket"><i class="fas fa-ticket-alt"></i><span>Ingressos</span></a>
+        <a href="#" class="fab fab-whatsapp"><i class="fab fa-whatsapp"></i><span>WhatsApp</span></a>
+        <button class="fab fab-back-top" id="backTop" aria-label="Voltar ao topo"><i class="fas fa-chevron-up"></i></button>
+    </div>
+
+    <!-- ===== SEARCH MODAL ===== -->
+    <div class="search-modal" id="searchModal">
+        <button class="search-close" id="searchClose" aria-label="Fechar busca"><i class="fas fa-times"></i></button>
+        <div class="search-modal-content">
+            <input type="text" id="searchInput" placeholder="Buscar artistas, palcos, setores...">
+            <div class="search-suggestions" id="searchResults"></div>
+        </div>
+    </div>
+
+    <!-- ===== ARTIST MODAL ===== -->
+    <div class="artist-modal" id="artistModal">
+        <button class="artist-modal-close" id="artistModalClose" aria-label="Fechar"><i class="fas fa-times"></i></button>
+        <div class="artist-modal-content">
+            <div class="artist-modal-image" id="artistModalImage"></div>
+            <div class="artist-modal-info">
+                <div class="artist-modal-day" id="artistModalDay"></div>
+                <div class="artist-modal-stage" id="artistModalStage"></div>
+                <h2 class="artist-modal-name" id="artistModalName"></h2>
+                <div class="artist-modal-tags" id="artistModalTags"></div>
+                <p class="artist-modal-bio" id="artistModalBio"></p>
+                <a href="ingressos.html" class="btn btn-primary btn-small">Garantir Ingresso</a>
+            </div>
+        </div>
+    </div>
+
+    <script src="scripts.js"></script>
+</body>
+</html>
