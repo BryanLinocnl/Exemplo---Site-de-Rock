@@ -1,0 +1,118 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 800" role="img" aria-labelledby="title desc">
+  <title id="title">Pato andando de bicicleta</title>
+  <desc id="desc">Ilustração alegre de um pato amarelo pedalando uma bicicleta vermelha em uma estrada campestre.</desc>
+  <defs>
+    <linearGradient id="sky" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#9bdcff"/>
+      <stop offset="1" stop-color="#e7f7ff"/>
+    </linearGradient>
+    <linearGradient id="road" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#8d9eaa"/>
+      <stop offset="1" stop-color="#556572"/>
+    </linearGradient>
+    <linearGradient id="feather" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#ffe877"/>
+      <stop offset="1" stop-color="#eeb52e"/>
+    </linearGradient>
+    <linearGradient id="bike" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#ff5d4c"/>
+      <stop offset="1" stop-color="#c8273a"/>
+    </linearGradient>
+    <filter id="shadow" x="-30%" y="-30%" width="160%" height="180%">
+      <feGaussianBlur in="SourceAlpha" stdDeviation="12"/>
+      <feOffset dy="14"/>
+      <feComponentTransfer><feFuncA type="linear" slope=".24"/></feComponentTransfer>
+      <feMerge><feMergeNode/><feMergeNode in="SourceGraphic"/></feMerge>
+    </filter>
+    <filter id="soft" x="-20%" y="-20%" width="140%" height="140%">
+      <feGaussianBlur stdDeviation="18"/>
+    </filter>
+  </defs>
+
+  <!-- céu -->
+  <rect width="1200" height="800" fill="url(#sky)"/>
+  <circle cx="1000" cy="135" r="62" fill="#fff7c5" opacity=".9"/>
+  <g fill="#fff" opacity=".82">
+    <path d="M112 174c14-31 54-35 72-8 22-18 64-2 64 31H74c0-18 16-33 38-33z"/>
+    <path d="M825 214c10-24 42-27 56-7 18-15 51-2 51 25H795c0-14 12-26 30-26z"/>
+  </g>
+  <path d="M0 412c160-76 267-67 405-11 160 65 265 36 404-21 153-63 254-49 391 16v154H0z" fill="#8cc779"/>
+  <path d="M0 465c173-55 294-26 424 21 136 49 266 17 401-37 160-63 256-25 375 17v105H0z" fill="#5da85e"/>
+  <path d="M0 544c203-43 323-5 477 39 150 42 267 10 399-30 136-41 235-20 324 19v228H0z" fill="url(#road)"/>
+  <path d="M0 648c200-28 343 7 497 39 159 33 279 7 401-19 119-26 213-13 302 16v116H0z" fill="#4c5d6a" opacity=".75"/>
+  <path d="M75 633c130-17 226-7 320 12M839 625c95-15 181-9 279 12" fill="none" stroke="#f4f0c6" stroke-width="10" stroke-linecap="round" opacity=".7"/>
+  <g fill="#3f8e54" opacity=".8">
+    <path d="M45 520l16-47 12 44 27-30-12 49z"/><path d="M1090 520l11-50 17 39 27-24-16 47z"/>
+  </g>
+
+  <!-- sombra -->
+  <ellipse cx="611" cy="648" rx="287" ry="38" fill="#243642" opacity=".28" filter="url(#soft)"/>
+
+  <!-- bicicleta -->
+  <g filter="url(#shadow)" stroke-linecap="round" stroke-linejoin="round">
+    <circle cx="430" cy="580" r="91" fill="#dbe7ee" fill-opacity=".15" stroke="#263945" stroke-width="12"/>
+    <circle cx="790" cy="580" r="91" fill="#dbe7ee" fill-opacity=".15" stroke="#263945" stroke-width="12"/>
+    <g stroke="#5c707b" stroke-width="3" opacity=".75">
+      <path d="M430 489v182M339 580h182M366 516l128 128M494 516L366 644"/>
+      <path d="M790 489v182M699 580h182M726 516l128 128M854 516L726 644"/>
+    </g>
+    <g fill="none" stroke="url(#bike)" stroke-width="15">
+      <path d="M430 580l116-143 104 143H430z"/>
+      <path d="M546 437l74 143 170 0-74-145"/>
+      <path d="M620 580l102-145"/>
+    </g>
+    <path d="M704 432l-11-50M695 382h55" fill="none" stroke="#263945" stroke-width="12"/>
+    <path d="M692 370h70" fill="none" stroke="#ffcf3e" stroke-width="15"/>
+    <path d="M537 431h-68" fill="none" stroke="#263945" stroke-width="12"/>
+    <path d="M460 421h76" fill="none" stroke="#ffcf3e" stroke-width="15"/>
+    <circle cx="620" cy="580" r="25" fill="#ffc928" stroke="#263945" stroke-width="8"/>
+    <path d="M620 580l-43 31M620 580l46-31" stroke="#263945" stroke-width="8"/>
+    <path d="M577 611h-35M666 549h35" stroke="#263945" stroke-width="9"/>
+    <path d="M607 431h-55" stroke="#263945" stroke-width="13"/>
+    <path d="M590 420h-58" stroke="#ffcf3e" stroke-width="15"/>
+  </g>
+
+  <!-- pato -->
+  <g filter="url(#shadow)" stroke="#5b3c25" stroke-linecap="round" stroke-linejoin="round">
+    <!-- corpo -->
+    <path d="M521 364c-27-66 1-136 78-152 84-17 155 37 159 116 4 73-44 129-120 133-57 3-101-34-117-97z" fill="url(#feather)" stroke-width="9"/>
+    <path d="M555 349c-30 18-45 56-25 91 24 40 78 38 102 4 14-20 11-44-2-61" fill="#f5c63f" stroke-width="8"/>
+    <!-- asa -->
+    <path d="M590 289c-29 18-42 59-25 88 17 29 57 35 87 12 22-17 29-47 11-70-17-23-45-40-73-30z" fill="#f6c43b" stroke-width="8"/>
+    <path d="M599 305c18 10 30 24 36 42" fill="none" stroke="#d99b2c" stroke-width="7"/>
+    <!-- pescoço/cabeça -->
+    <path d="M567 255c-26-16-42-50-30-87 14-43 61-66 104-51 44 15 62 59 47 101-13 36-48 58-82 54z" fill="url(#feather)" stroke-width="9"/>
+    <path d="M602 133c-15-34 15-64 51-53 27 8 39 37 26 59-15 26-61 23-77-6z" fill="#e9b72d" stroke-width="8"/>
+    <!-- bico -->
+    <path d="M672 174c45-16 87-3 101 19 8 14-13 28-44 30-33 2-62-10-76-26z" fill="#ee8032" stroke-width="9"/>
+    <path d="M688 189c21 5 43 5 64 0" fill="none" stroke="#be542c" stroke-width="6"/>
+    <!-- olho -->
+    <circle cx="651" cy="157" r="15" fill="#fff" stroke-width="7"/>
+    <circle cx="655" cy="157" r="6" fill="#26343a" stroke="none"/>
+    <circle cx="658" cy="153" r="2.8" fill="#fff" stroke="none"/>
+    <!-- pernas pedalando -->
+    <path d="M617 433c-10 35-12 76 7 111" fill="none" stroke="#e48e2d" stroke-width="14"/>
+    <path d="M666 431c14 34 13 69-4 111" fill="none" stroke="#e48e2d" stroke-width="14"/>
+    <path d="M624 543l-38 18M662 543l39-19" fill="none" stroke="#e48e2d" stroke-width="12"/>
+    <path d="M581 563h-35M700 525h36" fill="none" stroke="#8a4b28" stroke-width="9"/>
+    <!-- asas no guidão -->
+    <path d="M611 286c32 17 61 50 82 91" fill="none" stroke="#5b3c25" stroke-width="9"/>
+    <path d="M693 377l-3 38" fill="none" stroke="#e8b330" stroke-width="20"/>
+    <circle cx="693" cy="416" r="12" fill="#e8842b" stroke-width="6"/>
+    <path d="M540 299c-29 3-48-18-59-43" fill="none" stroke="#e8b330" stroke-width="21"/>
+    <path d="M481 256l-18-17" fill="none" stroke="#e8842b" stroke-width="11"/>
+  </g>
+
+  <!-- capacete -->
+  <path d="M589 114c19-42 75-57 116-22 18 15 27 35 28 57l-130 6c-18-8-21-24-14-41z" fill="#ef4c54" stroke="#5b3c25" stroke-width="9" stroke-linejoin="round"/>
+  <path d="M592 155h142" stroke="#fff0d0" stroke-width="10" stroke-linecap="round" opacity=".8"/>
+  <path d="M615 98c19-20 45-29 73-23" fill="none" stroke="#ff8580" stroke-width="8" stroke-linecap="round"/>
+
+  <!-- detalhes de movimento -->
+  <g fill="none" stroke="#fff" stroke-width="9" stroke-linecap="round" opacity=".75">
+    <path d="M278 356h73M256 388h44"/><path d="M876 337h72M909 369h42"/>
+  </g>
+  <g fill="#f8d65c">
+    <circle cx="183" cy="278" r="9"/><circle cx="1014" cy="335" r="8"/><circle cx="967" cy="281" r="5"/>
+  </g>
+</svg>
