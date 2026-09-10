@@ -1,0 +1,385 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Resumo de Utilidades e Propostas — Arquétipo Eventos</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Montserrat:wght@400;500;600;700&family=Space+Mono:wght@400;700&display=swap" rel="stylesheet">
+  <style>
+    :root {
+      --bg: #0A0A0A;
+      --bg-card: #141414;
+      --border: #262626;
+      --red: #E10600;
+      --green: #00E676;
+      --text: #EDEDED;
+      --text-muted: #888888;
+      --font-display: 'Bebas Neue', sans-serif;
+      --font-mono: 'Space Mono', monospace;
+      --font-body: 'Montserrat', sans-serif;
+    }
+
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    body {
+      background-color: var(--bg);
+      color: var(--text);
+      font-family: var(--font-body);
+      line-height: 1.6;
+      padding: 2.5rem 1.5rem;
+    }
+
+    .container {
+      max-width: 960px;
+      margin: 0 auto;
+    }
+
+    header {
+      border-bottom: 2px solid var(--red);
+      padding-bottom: 1.5rem;
+      margin-bottom: 2.5rem;
+    }
+
+    .tag {
+      font-family: var(--font-mono);
+      font-size: 0.75rem;
+      text-transform: uppercase;
+      background: var(--red);
+      color: #FFF;
+      padding: 0.25rem 0.6rem;
+      display: inline-block;
+      margin-bottom: 0.75rem;
+      letter-spacing: 1px;
+    }
+
+    h1 {
+      font-family: var(--font-display);
+      font-size: clamp(2.2rem, 5vw, 3.5rem);
+      letter-spacing: 1.5px;
+      line-height: 1.1;
+      text-transform: uppercase;
+      margin-bottom: 0.5rem;
+    }
+
+    .lead {
+      color: var(--text-muted);
+      font-size: 1rem;
+    }
+
+    section {
+      margin-bottom: 3rem;
+    }
+
+    h2 {
+      font-family: var(--font-display);
+      font-size: 1.8rem;
+      letter-spacing: 1px;
+      text-transform: uppercase;
+      color: var(--red);
+      margin-bottom: 1.25rem;
+      display: flex;
+      align-items: center;
+      gap: 0.5rem;
+    }
+
+    h2::before {
+      content: '//';
+      font-family: var(--font-mono);
+      color: var(--text-muted);
+      font-size: 1.1rem;
+    }
+
+    /* Grid cards */
+    .grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+      gap: 1rem;
+    }
+
+    .card {
+      background: var(--bg-card);
+      border: 1px solid var(--border);
+      padding: 1.25rem;
+      position: relative;
+    }
+
+    .card-title {
+      font-family: var(--font-mono);
+      font-size: 0.95rem;
+      font-weight: 700;
+      color: #FFF;
+      margin-bottom: 0.5rem;
+      display: flex;
+      align-items: center;
+      gap: 0.4rem;
+    }
+
+    .card-title::before {
+      content: '■';
+      color: var(--red);
+      font-size: 0.75rem;
+    }
+
+    .card p {
+      font-size: 0.88rem;
+      color: var(--text-muted);
+    }
+
+    /* Table */
+    .table-container {
+      overflow-x: auto;
+      border: 1px solid var(--border);
+      background: var(--bg-card);
+    }
+
+    table {
+      width: 100%;
+      border-collapse: collapse;
+      font-size: 0.9rem;
+      text-align: left;
+    }
+
+    th, td {
+      padding: 0.9rem 1.2rem;
+      border-bottom: 1px solid var(--border);
+    }
+
+    th {
+      font-family: var(--font-mono);
+      font-size: 0.8rem;
+      text-transform: uppercase;
+      letter-spacing: 1px;
+      color: var(--green);
+      background: #191919;
+    }
+
+    td strong {
+      color: #FFF;
+      font-weight: 600;
+    }
+
+    td {
+      color: var(--text-muted);
+    }
+
+    /* Modificações list */
+    .mod-item {
+      background: var(--bg-card);
+      border: 1px solid var(--border);
+      border-left: 3px solid var(--red);
+      padding: 1.25rem;
+      margin-bottom: 1rem;
+    }
+
+    .mod-item h3 {
+      font-family: var(--font-mono);
+      font-size: 1rem;
+      color: #FFF;
+      margin-bottom: 0.5rem;
+    }
+
+    .mod-item .status {
+      font-size: 0.82rem;
+      color: var(--text-muted);
+      margin-bottom: 0.5rem;
+    }
+
+    .mod-item ul {
+      list-style: none;
+      padding-left: 0;
+    }
+
+    .mod-item li {
+      font-size: 0.88rem;
+      color: #CCC;
+      padding: 0.25rem 0;
+      display: flex;
+      align-items: flex-start;
+      gap: 0.5rem;
+    }
+
+    .mod-item li::before {
+      content: '→';
+      color: var(--green);
+      font-family: var(--font-mono);
+    }
+
+    footer {
+      border-top: 1px solid var(--border);
+      padding-top: 1.5rem;
+      font-family: var(--font-mono);
+      font-size: 0.8rem;
+      color: var(--text-muted);
+      text-align: center;
+    }
+  </style>
+</head>
+<body>
+
+  <div class="container">
+    <header>
+      <span class="tag">Relatório Estratégico</span>
+      <h1>Arquétipo Eventos</h1>
+      <p class="lead">Resumo de utilidades do portal oficial, oportunidades de expansão de produto e roadmap de melhorias para a infraestrutura digital existente.</p>
+    </header>
+
+    <!-- Seção 1 -->
+    <section>
+      <h2>Para Que Serve o Site Atual</h2>
+      <div class="grid">
+        <div class="card">
+          <div class="card-title">Hub Oficial da Marca</div>
+          <p>Ponto de contato digital que transmite credibilidade, manifesto institucional, autoridade e a estética underground do festival.</p>
+        </div>
+        <div class="card">
+          <div class="card-title">Divulgação do Line-up</div>
+          <p>Exposição dos artistas por dia (04 a 07 de setembro), palcos temáticos (Principal, Sunset, NDO) e estilos musicais.</p>
+        </div>
+        <div class="card">
+          <div class="card-title">Vitrine de Ingressos</div>
+          <p>Comunicação clara dos 4 setores (Pista, Premium, Comfort Zone, Passe 4 Dias) com diferenciais e precificação.</p>
+        </div>
+        <div class="card">
+          <div class="card-title">Engajamento e Comunidade</div>
+          <p>Linha do tempo (2019-2026), depoimentos reais, galeria com lightbox imersivo e manifesto "A tribo vai se reunir".</p>
+        </div>
+        <div class="card">
+          <div class="card-title">Central de Notícias</div>
+          <p>Publicação de comunicados, entrevistas, novidades técnicas de som/palco e canal oficial para a imprensa.</p>
+        </div>
+        <div class="card">
+          <div class="card-title">FAQ e Suporte</div>
+          <p>Acordeão com regras sobre meia-entrada, classificação etária, itens permitidos/proibidos e segurança.</p>
+        </div>
+        <div class="card">
+          <div class="card-title">Vitrine Comercial B2B</div>
+          <p>Espaço para exposição de patrocinadores, copatrocinadores, parceiros de mídia e fornecedores.</p>
+        </div>
+        <div class="card">
+          <div class="card-title">Captação de Leads</div>
+          <p>Newsletter no rodapé e chamada de ação para notificações de viradas de lote e pré-vendas exclusivas.</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Seção 2 -->
+    <section>
+      <h2>Novas Utilidades Sugeridas</h2>
+      <div class="table-container">
+        <table>
+          <thead>
+            <tr>
+              <th>Nova Utilidade</th>
+              <th>Objetivo de Negócio e Experiência do Usuário</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td><strong>"Minha Grade" (Agenda Personalizada)</strong></td>
+              <td>Usuário favorita atrações, monta cronograma individual dos 4 dias e recebe alertas prévios de início de show.</td>
+            </tr>
+            <tr>
+              <td><strong>Mapa Interativo da "Cidade do Rock"</strong></td>
+              <td>Guia digital interativo com localização de palcos, postos médicos, praça de alimentação, banheiros e hidratação.</td>
+            </tr>
+            <tr>
+              <td><strong>E-commerce de Merchandising</strong></td>
+              <td>Compra antecipada de camisas, copos e capas com opção de retirada expressa no festival sem filas.</td>
+            </tr>
+            <tr>
+              <td><strong>Recarga Antecipada Cashless</strong></td>
+              <td>Carregamento prévio de saldo na pulseira via PIX/Cartão antes do festival, despressurizando caixas físicos.</td>
+            </tr>
+            <tr>
+              <td><strong>Hub de Transporte e Hospedagem</strong></td>
+              <td>Reserva de ônibus executivo oficial (transfer), rotas de transporte público e hotéis parceiros conveniados.</td>
+            </tr>
+            <tr>
+              <td><strong>Portal de Imprensa e B2B</strong></td>
+              <td>Área de solicitação de credenciamento para jornalistas/fotógrafos e download de press-kits em alta resolução.</td>
+            </tr>
+            <tr>
+              <td><strong>PWA com Modo Offline</strong></td>
+              <td>Acesso a horários, mapas e contatos de emergência diretamente pelo celular, mesmo com rede celular saturada.</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </section>
+
+    <!-- Seção 3 -->
+    <section>
+      <h2>Propostas de Modificação para o que Já Existe</h2>
+      
+      <div class="mod-item">
+        <h3>Ingressos (ingressos.html)</h3>
+        <p class="status"><strong>Situação:</strong> Cards com botões estáticos para simulador/modal.</p>
+        <ul>
+          <li>Integrar com gateway ou checkout real (Sympla, Eventim, Ingresse ou Stripe).</li>
+          <li>Implementar indicador visual de escassez em tempo real ("Lote 2: 85% vendido").</li>
+          <li>Simulador dinâmico de parcelamento e cálculo automático de taxa de conveniência.</li>
+        </ul>
+      </div>
+
+      <div class="mod-item">
+        <h3>Line-up e Modal de Artista (lineup.html & scripts.js)</h3>
+        <p class="status"><strong>Situação:</strong> Grid de cards estáticos com modal de bio simples.</p>
+        <ul>
+          <li>Exibir horários exatos de cada show (time slots) por palco.</li>
+          <li>Inserir player mini embed (Spotify / YouTube Music) na bio do artista.</li>
+          <li>Adicionar botão "Salvar no Google Agenda / Apple Calendar".</li>
+        </ul>
+      </div>
+
+      <div class="mod-item">
+        <h3>Sistema de Busca Global (scripts.js)</h3>
+        <p class="status"><strong>Situação:</strong> Array fixo de 19 termos hard-coded no script.</p>
+        <ul>
+          <li>Migrar índice de busca para JSON externo carregado sob demanda.</li>
+          <li>Implementar busca aproximada (fuzzy search) tolerante a erros de digitação.</li>
+          <li>Segmentar resultados em abas: Artistas, Setores, Dúvidas e Notícias.</li>
+        </ul>
+      </div>
+
+      <div class="mod-item">
+        <h3>Notícias (noticias.html e noticia.html)</h3>
+        <p class="status"><strong>Situação:</strong> Artigo único fixo, paginação estática e áudio mockup.</p>
+        <ul>
+          <li>Carregar lista de notícias de forma dinâmica (Markdown ou JSON).</li>
+          <li>Integrar áudio real (podcast oficial do festival via player nativo ou Spotify embed).</li>
+          <li>Transformar botão "Carregar Mais" em paginação funcional assíncrona.</li>
+        </ul>
+      </div>
+
+      <div class="mod-item">
+        <h3>Newsletter e Captura de Leads</h3>
+        <p class="status"><strong>Situação:</strong> Apenas feedback visual ("INSCRITO!") no botão.</p>
+        <ul>
+          <li>Conectar com ferramenta de automação (Mailchimp, Brevo, RD Station ou webhook).</li>
+          <li>Disparar e-mail de confirmação imediato com cupom de 10% na loja oficial ou aviso de pré-venda.</li>
+        </ul>
+      </div>
+
+      <div class="mod-item">
+        <h3>FAQ e Atendimento</h3>
+        <p class="status"><strong>Situação:</strong> Acordeão fixo com 6 perguntas.</p>
+        <ul>
+          <li>Adicionar filtro instantâneo por categorias (Ingressos, Acessibilidade, Segurança).</li>
+          <li>Link direto para WhatsApp com mensagem pré-formatada para suporte rápido e PCD.</li>
+        </ul>
+      </div>
+    </section>
+
+    <footer>
+      <p>Arquétipo Eventos &copy; 2026 — Documento de Análise e Propostas</p>
+    </footer>
+  </div>
+
+</body>
+</html>
